@@ -93,7 +93,7 @@ class Hero:
 					self.x += 1
 			elif key == KEY_Z: # Down
 				self.icon = 'V'
-				if self.is_movable(self.x, self.y+1)
+				if self.is_movable(self.x, self.y+1):
 					self.y += 1
 			else:
 				continue
