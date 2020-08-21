@@ -46,7 +46,7 @@ class Map:
 					row_list.append(characters[(x,y)])
 				else:
 					row_list.append(' ')
-			row_list.append('|') # 行の右端
+			row_list.append('|\n') # 行の右端
 			return ''.join(row_list)
 			
 		# 各行を連結してマップを作成
@@ -61,12 +61,12 @@ class Map:
 
 
 class Hero:
-	def __init__(self, x, y, is_movable, draw):
+	def __init__(self, x, y, is_movable, draw_map):
 		self.x = x
 		self.y = y
 		self.icon = '^'
 		self.is_movable = is_movable
-		self.draw = draw
+		self.draw_map = draw_map
 	
 	def run(self):
 		print('---------------------')
@@ -98,7 +98,7 @@ class Hero:
 			else:
 				continue
 				
-			self.draw()
+			self.draw_map()
 			
 			
 dqmap = Map(7,7)
