@@ -56,7 +56,7 @@ class Map:
 		return True
 	
 	# 画面に現在の状態を描画するメソッド
-	def draw(self):
+	def draw(self, message):
 		# 辞書のキーにx,yのタプル、バリューにキャラクターアイコンを登録
 		characters = {}
 		characters[(self.hero.x, self.hero.y)] = self.hero.icon
