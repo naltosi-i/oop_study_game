@@ -6,7 +6,7 @@ KEY_W = 119
 KEY_A = 97
 KEY_S = 115
 KEY_Z = 122
-
+KEY_D = 100
 
 class Townsman:
 	def __init__(self, x, y, icon, message):
