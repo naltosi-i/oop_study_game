@@ -104,7 +104,7 @@ class Hero:
 	
 	def run(self):
 		print('---------------------')
-		print('w:up, a:left, s:right, z:down')
+		print('w:up, a:left, s:right, z:down, d:talk')
 		print('ctrl-c:quit')
 		print('---------------------')
 		
